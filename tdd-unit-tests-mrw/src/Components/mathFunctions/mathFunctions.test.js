@@ -54,6 +54,14 @@ describe('math module', () => {
         it('multiply 5 x -5 to equal -25', () => {
             expect(multiplyNums(5, -5)).toEqual(-25)
         });
+
+        it('multiply 0 x 5 to equal 0', () => {
+            expect(multiplyNums(0, 5)).toEqual(0)
+        });
+
+        it('multiply -3 x -3 to equal 9', () => {
+            expect(multiplyNums(-3, -3)).toEqual(9)
+        });
     })
 
     describe('divivde nums:', () => {
@@ -68,6 +76,10 @@ describe('math module', () => {
     
         it('divide 9 / 9 to equal 1', () => {
             expect(divideNums(9, 9)).toEqual(1)
+        });
+
+        it('divide 9 / 0 to equal 0', () => {
+            expect(divideNums(9, 0)).toEqual(undefined)
         });
     })
 

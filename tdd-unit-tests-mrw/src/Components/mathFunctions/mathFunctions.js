@@ -27,7 +27,13 @@ function multiplyNums(x, y){
 };
 
 function divideNums(x, y){
-    return x/y
+    if(x === 0 || y === 0){
+        return undefined
+    }
+    else{
+        return x/y
+    }
+    
 };
 
 export {addNums, subNums, multiplyNums, divideNums}
