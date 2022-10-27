@@ -21,7 +21,7 @@ describe('math module', () => {
     describe('sub nums:', () => {
 
         it('subtract 4 - 2 to equal 2', () => {
-            expect(subNums(2, 2)).toBe(2)
+            expect(subNums(4, 2)).toBe(2)
         });
     
         it('subtract 5 - 5 to not equal 1', () => {
@@ -40,11 +40,11 @@ describe('math module', () => {
         });
     
         it('multiply 5 x -5 to not equal 25', () => {
-            expect(multiplyNums(5, 5)).not.toBe(25)
+            expect(multiplyNums(5, -5)).not.toBe(25)
         });
     
         it('multiply 5 x -5 to equal -25', () => {
-            expect(multiplyNums(3, 3)).toEqual(-25)
+            expect(multiplyNums(5, -5)).toEqual(-25)
         });
     })
 

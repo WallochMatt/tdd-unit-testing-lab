@@ -1,19 +1,19 @@
 
 
 function addNums(x, y){
-
+    return x + y
 };
 
-function subNums(){
-
+function subNums(x, y){
+    return x - y
 };
 
-function multiplyNums(){
-
+function multiplyNums(x, y){
+    return x * y
 };
 
-function divideNums(){
-
+function divideNums(x, y){
+    return x/y
 };
 
 export {addNums, subNums, multiplyNums, divideNums}
