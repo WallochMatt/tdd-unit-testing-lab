@@ -1,7 +1,21 @@
-
+//asd
 
 function addNums(x, y){
-    return x + y
+    
+    
+    if(isNaN(x) ||  isNaN(y)){
+        throw TypeError("Must be Arabic numeral");
+    }
+    
+    if(x === undefined || y === undefined){
+        throw ReferenceError
+    }
+    
+    else{
+        let result = parseInt(x) + parseInt(y);
+        return result
+    }
+    
 };
 
 function subNums(x, y){

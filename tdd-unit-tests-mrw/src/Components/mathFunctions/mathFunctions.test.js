@@ -16,6 +16,14 @@ describe('math module', () => {
         it('add 2 + 2 to equal 4', () => {
             expect(addNums(2, 2)).toEqual(4)
         });
+
+        it('add two + 2 to not equal two2', () => {
+            expect(() => addNums('two', 2)).toThrow(TypeError)
+        });
+
+        it('add two + 2 to not equal two2', () => {
+            expect(() => addNums(two, 2)).toThrow(ReferenceError)
+        });
     })
 
     describe('sub nums:', () => {
@@ -64,3 +72,4 @@ describe('math module', () => {
     })
 
 })
+// agftryer
